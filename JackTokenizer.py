@@ -1,4 +1,6 @@
-class JackTokenizer(object):
+import re
+
+class Tokenizer(object):
 
     def __init__(self, file):
         self.currentToken = None
@@ -9,7 +11,10 @@ class JackTokenizer(object):
         self.file = fhand.readlines()
         self.prepare()
         self.toEnd = len(self.file)
+<<<<<<< HEAD
 
+=======
+>>>>>>> Main
 
     def loadLists(self):
         self.keywords = [
