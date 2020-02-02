@@ -11,10 +11,6 @@ class Tokenizer(object):
         self.file = fhand.readlines()
         self.prepare()
         self.toEnd = len(self.file)
-<<<<<<< HEAD
-
-=======
->>>>>>> Main
 
     def loadLists(self):
         self.keywords = [
