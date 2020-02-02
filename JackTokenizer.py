@@ -1,4 +1,6 @@
-class JackTokenizer(object):
+import re
+
+class Tokenizer(object):
 
     def __init__(self, file):
         self.currentToken = None
