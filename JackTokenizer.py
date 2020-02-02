@@ -11,14 +11,6 @@ class Tokenizer(object):
         self.file = fhand.readlines()
         self.prepare()
         self.toEnd = len(self.file)
-        #print(self.file)
-        #while(self.hasMoreTokens()):
-        #    self.advance()
-        #    print(self.currentToken)
-        #    print(self.tokenType())
-        #    print(self.stringVal())
-        #print("after a while")
-
 
     def loadLists(self):
         self.keywords = [

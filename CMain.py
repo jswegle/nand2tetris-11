@@ -1,12 +1,14 @@
 
 class Main(object):
     def __init__(self, filepath):
+        self.jackfiles = []
         self.fileOrDir(filepath)
         for file in self.jackfiles:
             print(file)
-            tokenizer = Tokenizer(filepath)
-            outputname = filepath.split('.')[0]+"my.xml"
+            tokenizer = Tokenizer(file)
+            outputname = filepath.split('.')[0]+".0000.xml"
             print(outputname)
+            print(tokenizer.file)
             #compEngine = compilationEngine(tokenizer, outputname)
 
     def fileOrDir(self, filepath):
